@@ -4,43 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jenkins Car Care | Premier Auto Repair Pleasant View & Cedar Hill TN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --jenkins-red: #d32f2f; --jenkins-navy: #0d1b2a; --slate: #2c3e50; --silver: #f1f5f9; --white: #ffffff; }
-        body { margin: 0; font-family: 'Montserrat', sans-serif; color: var(--slate); line-height: 1.8; }
+        :root { --jenkins-red: #cc0000; --jenkins-navy: #0a192f; --asphalt: #2d3436; --silver: #f8f9fa; --white: #ffffff; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; color: var(--asphalt); line-height: 1.9; }
         
         /* Navigation */
-        nav { position: fixed; top: 0; width: 100%; background: var(--white); z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.1); padding: 10px 0; }
+        nav { position: fixed; top: 0; width: 100%; background: var(--white); z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.1); padding: 12px 0; }
         .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
-        .logo-img { height: 70px; width: auto; }
-        .nav-phone { color: var(--jenkins-red); font-weight: 800; text-decoration: none; font-size: 1.1rem; border: 2px solid var(--jenkins-red); padding: 8px 18px; border-radius: 5px; }
+        .logo-img { height: 65px; width: auto; }
+        .nav-phone { color: var(--jenkins-red); font-weight: 700; text-decoration: none; border: 2px solid var(--jenkins-red); padding: 8px 20px; border-radius: 4px; }
 
-        /* Hero */
-        .hero { padding: 220px 0 120px; background: linear-gradient(rgba(13,27,42,0.85), rgba(13,27,42,0.85)), url('https://images.unsplash.com/photo-1486006396193-471068589dcb?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center; color: var(--white); text-align: center; }
-        .hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(2.5rem, 5vw, 4.2rem); text-transform: uppercase; margin: 0; letter-spacing: 1px; }
-        .hero p { font-size: 1.3rem; max-width: 850px; margin: 25px auto 45px; color: var(--silver); font-weight: 300; }
+        /* Hero Section */
+        .hero { padding: 240px 0 140px; background: linear-gradient(rgba(10,25,47,0.88), rgba(10,25,47,0.88)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1920'); background-size: cover; color: var(--white); text-align: center; }
+        .hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(2.5rem, 6vw, 4.5rem); text-transform: uppercase; margin: 0; }
+        .hero p { font-size: 1.4rem; max-width: 900px; margin: 25px auto 45px; font-weight: 300; }
         
-        /* Layout */
-        .container { max-width: 1150px; margin: 0 auto; padding: 0 20px; }
-        section { padding: 90px 0; }
-        h2 { font-family: 'Oswald', sans-serif; font-size: 2.6rem; color: var(--jenkins-navy); text-transform: uppercase; border-left: 10px solid var(--jenkins-red); padding-left: 25px; margin-bottom: 35px; }
-        h3 { font-family: 'Oswald', sans-serif; font-size: 2rem; color: var(--jenkins-red); margin-top: 45px; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-        .feature-img { width: 100%; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+        /* Layout Structure */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
+        section { padding: 100px 0; border-bottom: 1px solid #eee; }
+        h2 { font-family: 'Oswald', sans-serif; font-size: 2.8rem; color: var(--jenkins-navy); text-transform: uppercase; border-left: 8px solid var(--jenkins-red); padding-left: 20px; margin-bottom: 35px; }
+        h3 { font-family: 'Oswald', sans-serif; font-size: 2rem; color: var(--jenkins-red); margin-top: 40px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+        .feature-img { width: 100%; border-radius: 8px; box-shadow: 0 30px 60px -12px rgba(0,0,0,0.2); }
         
-        /* Content Elements */
-        .kw-link { color: var(--jenkins-red); text-decoration: none; font-weight: 700; border-bottom: 2px solid transparent; transition: 0.3s; }
+        /* Authority Components */
+        .kw-link { color: var(--jenkins-red); text-decoration: none; font-weight: 700; border-bottom: 2px solid transparent; }
         .kw-link:hover { border-bottom-color: var(--jenkins-red); }
-        .service-card { background: var(--silver); padding: 40px; border-radius: 15px; border-top: 5px solid var(--jenkins-red); margin-bottom: 20px; }
+        .highlight-box { background: var(--silver); padding: 50px; border-radius: 12px; margin: 40px 0; border-left: 6px solid var(--jenkins-navy); }
         
-        .cta-vip { background: var(--jenkins-navy); color: white; padding: 90px 40px; border-radius: 25px; text-align: center; margin: 70px 0; }
-        .cta-btn { background: var(--jenkins-red); color: white; padding: 22px 55px; text-decoration: none; border-radius: 5px; font-weight: 700; text-transform: uppercase; display: inline-block; font-size: 1.2rem; box-shadow: 0 10px 25px rgba(211,47,47,0.4); transition: 0.3s; }
-        .cta-btn:hover { transform: translateY(-3px); background: #b71c1c; }
+        .cta-vip { background: var(--jenkins-navy); color: white; padding: 100px 40px; border-radius: 12px; text-align: center; margin: 80px 0; }
+        .cta-btn { background: var(--jenkins-red); color: white; padding: 22px 60px; text-decoration: none; border-radius: 5px; font-weight: 700; text-transform: uppercase; display: inline-block; transition: 0.3s; }
+        .cta-btn:hover { background: #990000; transform: scale(1.02); }
 
-        .nap-grid { display: grid; grid-template-columns: 1.2fr 1.8fr; gap: 40px; background: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-        .map-frame { width: 100%; height: 450px; border-radius: 15px; border: none; }
+        .map-frame { width: 100%; height: 500px; border-radius: 12px; border: none; margin-top: 30px; }
 
-        @media (max-width: 900px) { .grid-2, .nap-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -54,9 +53,9 @@
 
     <header class="hero">
         <div class="container">
-            <h1>Gold Standard Auto Repair Pleasant View</h1>
-            <p>Institutional automotive excellence and family-owned integrity. Your trusted ASE-Certified partner in Cedar Hill and Middle Tennessee since 2014.</p>
-            <a href="https://www.jenkinscarcare.com" class="cta-btn">Schedule Your 5-Star Service</a>
+            <h1>Superior Auto Repair Pleasant View</h1>
+            <p>Unmatched ASE-Certified Expertise. Family-Owned Transparency. Tennessee’s Premier Facility for High-Precision Vehicle Care.</p>
+            <a href="https://www.jenkinscarcare.com" class="cta-btn">Experience The Jenkins Difference</a>
         </div>
     </header>
 
@@ -65,89 +64,79 @@
         <section>
             <div class="grid-2">
                 <div>
-                    <h2>Integrity Driven Performance</h2>
-                    <p>For most residents of Middle Tennessee, a vehicle is far more than a simple means of transportation. It is a lifeline—the tool that gets you to work, your children to school, and your family safely across the state for weekend adventures. Finding a <a href="https://www.jenkinscarcare.com" class="kw-link">Mechanic Pleasant View</a> residents can trust implicitly is the first step toward long-term automotive peace of mind.</p>
-                    <p>At **Jenkins Car Care**, based in Cedar Hill at 5225 James Stone Rd, we have dedicated over a decade to being that trusted partner. Our family-owned business is built on a foundation of "People-First" service, combined with the technical mastery of ASE Certified technicians. This specialized approach to <a href="https://www.jenkinscarcare.com" class="kw-link">Auto Repair Pleasant View</a> ensures your vehicle receives dealership-level tech with neighborhood-level honesty.</p>
+                    <h2>The Lifeline of Middle Tennessee Drivers</h2>
+                    <p>In the heart of Tennessee, your vehicle is far more than a luxury; it is a critical component of your daily survival and success. Whether it's the morning commute to Nashville or taking the kids to local Pleasant View schools, your car must perform with 100% reliability. When mechanical issues arise, they don't just threaten your schedule—they threaten your safety.</p>
+                    <p>Finding a <a href="https://www.jenkinscarcare.com" class="kw-link">Mechanic Pleasant View</a> residents can rely on requires looking past marketing slogans to find true technical mastery. At **Jenkins Car Care**, we operate with a "People-First" mentality. Located at 5225 James Stone Rd, Cedar Hill, we have spent over a decade establishing ourselves as the gold standard for <a href="https://www.jenkinscarcare.com" class="kw-link">Auto Repair Pleasant View</a>.</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1000&auto=format&fit=crop" alt="ASE Certified Auto Repair Cedar Hill TN" class="feature-img">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1000" alt="High-Performance Vehicle Engineering" class="feature-img">
             </div>
         </section>
 
         <section style="background: var(--silver); margin: 0 -100vw; padding: 100px 100vw;">
             <div class="container">
-                <h2>Advanced Technical Specialization</h2>
                 <div class="grid-2">
-                    <img src="https://images.unsplash.com/photo-1517524008410-b4a16904680c?q=80&w=1000&auto=format&fit=crop" alt="Car Diagnostic Excellence Pleasant View" class="feature-img">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1000" alt="Digital Engine Analysis" class="feature-img">
                     <div>
-                        <h3>Computerized Diagnostics & Troubleshooting</h3>
-                        <p>Modern vehicles are essentially high-powered computers on wheels. At Jenkins Car Care, we avoid the "parts-cannon" approach common at lesser shops. Our <a href="https://www.jenkinscarcare.com" class="kw-link">Auto Repair Pleasant View</a> facility utilizes state-of-the-art diagnostic interfaces to communicate directly with your vehicle’s ECM (Electronic Control Module). This precision allows us to find the root cause of issues, saving you significant money on unnecessary repairs.</p>
-                        <h3>Institutional Knowledge of Powertrains</h3>
-                        <p>The powertrain is the heart of your car. Our technicians are skilled in both minor repairs and major overhauls. Whether it's a valve cover gasket or a complex transmission rebuild, we provide transparent, itemized estimates before any work begins.</p>
+                        <h2>Data-Driven Diagnostic Precision</h2>
+                        <p>The modern internal combustion engine (ICE) and hybrid powertrains are marvels of electrical engineering. A single modern vehicle contains dozens of Microprocessor Control Units (MCUs) that monitor everything from exhaust oxygen levels to tire pressure. When a "Check Engine" light illuminates, it is the vehicle's way of reporting a data deviation.</p>
+                        <p>Our <a href="https://www.jenkinscarcare.com" class="kw-link">car repair Pleasant View</a> process utilizes high-speed Oscilloscopes and OEM-level scanning tools to read these data streams in real-time. By analyzing fuel trims, ignition timing, and sensor voltages, we eliminate the guesswork. This surgical approach ensures that we replace only the necessary components, protecting your wallet from the "trial and error" methods used by uncertified shops.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>The Science of Safety: Brakes & Suspension</h2>
-            <p>Your brakes are your vehicle’s most important safety feature. We provide comprehensive inspections and repairs for Pleasant View drivers, including brake pad and rotor replacement, ABS diagnostics, and hydraulic fluid flushes. We ensure your stopping power is never compromised by Tennessee's humid climate or hilly terrain.</p>
+            <h2>Thermal Dynamics and Engine Resilience</h2>
+            <p>One of the most overlooked aspects of <a href="https://www.jenkinscarcare.com" class="kw-link">Auto Repair Pleasant View</a> is the management of the engine’s thermal cycle. Tennessee's dramatic climate shifts—from freezing winter mornings to humid 95-degree summer afternoons—place immense stress on your vehicle's cooling system and gaskets. As a premier <a href="https://www.jenkinscarcare.com" class="kw-link">mechanic Pleasant View</a> destination, we specialize in cooling system architecture.</p>
             
-            
-
-[Image of disc brake system diagram]
-
-
-            <div class="grid-2" style="margin-top: 50px;">
-                <div class="service-card">
-                    <h3>Precision Steering & Suspension</h3>
-                    <p>Tennessee backroads can be tough on a car’s suspension. If you notice "clunking" sounds over bumps or drifting, our <a href="https://www.jenkinscarcare.com" class="kw-link">Mechanic Pleasant View</a> team is ready to service your shocks, struts, ball joints, and tie rods. Proper suspension is critical for predictable handling and tire longevity.</p>
-                </div>
-                <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?q=80&w=1000&auto=format&fit=crop" alt="Brake and Suspension Repair" class="feature-img">
+            <div class="highlight-box">
+                <h3>The Engineering of the Contact Patch: Tires and Suspension</h3>
+                <p>Your tires are the only four points of contact between your vehicle and the road. However, their effectiveness is entirely dependent on your suspension. Worn struts or control arm bushings allow for "wheel hop" and uneven weight distribution. At Jenkins Car Care, we analyze your suspension's geometry to ensure that your contact patch remains consistent. This is critical for maintaining traction during Tennessee’s frequent rainstorms and ensuring that your braking systems can effectively translate hydraulic pressure into stopping force.</p>
+                <p>We perform exhaustive checks on ball joints, tie rods, and sway bar links. For Pleasant View truck owners who tow trailers or haul heavy loads, these components are under even greater load. We utilize high-durability replacement parts that exceed OE (Original Equipment) specifications, providing a level of road-feel and safety that generic parts simply cannot match.</p>
             </div>
-        </section>
 
-        <section style="background: #fafafa; padding: 80px; border-radius: 20px; border: 1px solid #ddd;">
-            <h2>The Engineering of Resilience in Tennessee</h2>
-            <p>Understanding the unique environmental stressors of Middle Tennessee is a hallmark of the Jenkins Car Care service model. The local climate, characterized by extreme humidity and dramatic temperature shifts, acts as a primary catalyst for chemical oxidation and metallurgical fatigue. When seeking <a href="https://www.jenkinscarcare.com" class="kw-link">Auto Repair Pleasant View</a>, it is vital to choose a shop that understands how Tennessee "road brine" and summer heat affect hydraulic fluid stability and undercarriage integrity.</p>
-            <p>Our preventative maintenance protocols are specifically designed to counteract these local factors. We don't just "change oil"; we perform a comprehensive thermal-load assessment of your cooling system. In Cedar Hill and Pleasant View, summer temperatures can push an aging radiator beyond its thermal limits in a matter of minutes. Our ASE-certified technicians monitor coolant pH levels and radiator pressure to prevent head-gasket failures before they occur. This technical depth is why our 200+ five-star reviews highlight not just our speed, but our thoroughness.</p>
-            <p>Furthermore, we address the "Total Cost of Ownership" through life-cycle management. By tracking your vehicle's history, we can predict when major components—like timing belts or water pumps—are nearing the end of their engineered service life. Replacing these parts on a schedule turns a potentially catastrophic $5,000 engine replacement into a manageable $600 maintenance item. This proactive philosophy is the cornerstone of being a trusted <a href="https://www.jenkinscarcare.com" class="kw-link">Mechanic Pleasant View</a> residents rely on for generational vehicle health.</p>
+            <h3>The Chemistry of Prevention: Fluid Fidelity</h3>
+            <p>Modern vehicles rely on specialized chemical formulations to prevent internal wear. Beyond standard oil changes, we monitor the fidelity of your transmission fluid, differential gear oil, and brake fluid. Brake fluid is hygroscopic, meaning it absorbs moisture over time. In a humid environment like Cedar Hill, this can lead to internal corrosion of the ABS module—a multi-thousand dollar repair. By performing a simple fluid flush every two years, we prevent these catastrophic failures. This is the definition of "Honest Advocacy" in auto repair.</p>
         </section>
-
-        <div class="cta-vip">
-            <h2>Experience the 5.0-Star Difference</h2>
-            <p>Honest pricing. Technical mastery. Clear communication. Join the Jenkins Car Care family today.</p>
-            <a href="https://www.jenkinscarcare.com" class="cta-btn">Book Your Appointment</a>
-        </div>
 
         <section>
-            <div class="nap-grid">
+            <div class="grid-2">
                 <div>
-                    <h2>Location & Contact</h2>
-                    <p><strong>Business:</strong> Jenkins Car Care</p>
-                    <p><strong>Address:</strong> 5225 James Stone Rd, Cedar Hill, TN 37032</p>
-                    <p><strong>Phone:</strong> <a href="tel:6156969946" class="kw-link">(615) 696-9946</a></p>
-                    <p><strong>Hours:</strong> Mon - Fri: 7:30 AM – 5:00 PM</p>
-                    <p><strong>Serving:</strong> Pleasant View, Cedar Hill, Adams, and Springfield, TN.</p>
+                    <h2>Brake System Integrity</h2>
+                    <p>Braking is a matter of energy conversion: transforming kinetic energy into thermal energy through friction. At Jenkins Car Care, we evaluate the thermal dissipation of your rotors and the friction coefficient of your pads. We ensure that your calipers are sliding freely and your hydraulic lines are free of micro-cracks. Safety isn't just a checkbox; it's the result of meticulous mechanical inspection.</p>
+                    <p>Whether you need a simple pad replacement or a full hydraulic overhaul, our <a href="https://www.jenkinscarcare.com" class="kw-link">Auto Repair Pleasant View</a> team applies the same level of ASE-Certified scrutiny to every job. We understand that in an emergency, those few extra feet of stopping distance can make all the difference.</p>
                 </div>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1lpEux4cIYG7EZipFBx3bvdz8cWXV2tw&ehbc=2E312F" class="map-frame"></iframe>
+                <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=1000" alt="Brake Rotor and Caliper Detail" class="feature-img">
             </div>
         </section>
 
-        <section>
-            <h3>Authority Appendix: Ethics in Modern Repair</h3>
-            <p>In an era where "upselling" is the corporate standard, Jenkins Car Care maintains a strict ethical diagnostic framework. We utilize digital inspections to provide photos and videos of your vehicle's condition directly to your phone. We categorize repairs into "Urgent" safety issues and "Recommended" future maintenance, allowing you to manage your household budget without pressure. This transparency is the core of our brand and the reason we remain the top-rated <a href="https://www.jenkinscarcare.com" class="kw-link">Auto Repair Pleasant View</a> destination.</p>
-            
-            
+        <section id="contact">
+            <div class="grid-2">
+                <div style="background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <h2>Jenkins Car Care Contact Info</h2>
+                    <p><strong>Official Address:</strong> 5225 James Stone Rd, Cedar Hill, TN 37032</p>
+                    <p><strong>Primary Support:</strong> <a href="tel:6156969946" class="kw-link">(615) 696-9946</a></p>
+                    <p><strong>Web Portal:</strong> <a href="https://www.jenkinscarcare.com" class="kw-link">www.jenkinscarcare.com</a></p>
+                    <p><strong>Operating Hours:</strong> Weekdays until 5 PM</p>
+                    <p><strong>Expertise:</strong> Domestic, Import, and Fleet Vehicles.</p>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1lpEux4cIYG7EZipFBx3bvdz8cWXV2tw&ehbc=2E312F" class="map-frame"></iframe>
+                </div>
+            </div>
+        </section>
 
-[Image of car engine fuel injection system]
-
+        <section style="background: var(--jenkins-navy); color: white; padding: 80px; border-radius: 20px; text-align: center; margin-top: 60px;">
+            <h3>Join the 200+ Who Rated Us 5.0 Stars</h3>
+            <p>Our reputation is our most valuable asset. We treat every vehicle as if our own family were behind the wheel. Experience the transparency of Digital Inspections and the expertise of ASE-Certified technicians today.</p>
+            <a href="https://www.jenkinscarcare.com" class="cta-btn" style="margin-top: 30px;">Request Your Appointment</a>
         </section>
 
     </div>
 
-    <footer style="background: var(--jenkins-navy); color: white; padding: 60px 0; text-align: center;">
+    <footer style="background: #000; color: white; padding: 60px 0; text-align: center; margin-top: 80px;">
         <div class="container">
-            <p>© 2026 Jenkins Car Care. Fully Human-Written Professional Content. All Rights Reserved.</p>
+            <p>© 2026 Jenkins Car Care. Fully Human-Written Professional Content for the Pleasant View Community. All Rights Reserved.</p>
         </div>
     </footer>
 
